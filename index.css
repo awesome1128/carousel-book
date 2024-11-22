@@ -1,0 +1,351 @@
+/* external css: flickity.css */
+
+* { box-sizing: border-box; background-color: #00953B; }
+
+body { font-family: sans-serif; }
+
+.success-stories-carousel-headings {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 82px;
+  margin-top: 50px;
+}
+
+.success-stories-carousel-headings .carousel-heading-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.success-stories-carousel-headings .carousel-heading-text h2 {
+  /* color: white;  */
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.success-stories-carousel {
+  /* padding: 50px 0; */
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.success-stories-carousel-headings .carousel-navigation {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateY(12px);
+  -ms-transform: translateY(12px);
+  transform: translateY(12px);
+  z-index: 2;
+  transform: translateY(24px);
+}
+
+.success-stories-carousel-headings .carousel-navigation .left {
+  cursor: pointer;
+}
+
+.success-stories-carousel-headings .carousel-navigation .left .left-arrow {
+  background-image: url('https://staging.daniellachace.com/wp-content/uploads/2022/05/left.svg');
+  background-repeat:  no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.success-stories-carousel-headings .carousel-navigation .left, .success-stories-carousel-headings .carousel-navigation .right {
+  cursor: pointer;
+}
+
+.success-stories-carousel-headings .carousel-navigation .right .right-arrow {
+  background-image: url('https://staging.daniellachace.com/wp-content/uploads/2022/05/right.svg');
+  background-repeat:  no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.success-stories-carousel-headings .carousel-navigation .cur-carousel {
+  /* color: white; */
+  letter-spacing: 2px;
+  margin: 0 24px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.success-stories-carousel .carousel-cell {
+  width: 100%;
+  height: 630px;
+  margin: 0 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+.success-stories-carousel button {
+  /* border-radius: 0%;
+  display: none; */
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote {
+  width: 50%;
+  margin: 5px;
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote .quote-heading {
+  font-weight: 500!important;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: #222;
+  font-size: 1.3rem;
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote .quote-title {
+  font-weight: 700!important;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  max-width: 80%;
+  margin: 0.5em 0;
+  color: black;
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote .quote-content {
+  font-size: 1.4rem;
+    /* color: white; */
+    /* font-weight: 200!important; */
+    line-height: 1.5em;
+    max-width: 80%;
+    color: #757575;
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote .quote-link {
+  font-weight: 700!important;
+  font-size: .7em;
+  text-transform: uppercase!important;
+  margin: 4em 0 1em;
+  display: inline-block;
+  letter-spacing: 2px;
+  line-height: 15px;
+  text-decoration: none;
+  padding: 3px 2px 1px;
+  color: #222;
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote .quote-attribution {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote .quote-attribution cite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote .quote-attribution cite .quotee {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 36px;
+  color: white;
+}
+
+.success-stories-carousel .carousel-cell .carousel-quote .quote-attribution cite .quotee-company {
+  color: white;
+  font-style: normal;
+}
+
+/* .success-stories-carousel .carousel-cell .carousel-quote::before {
+  content:"";
+  background: rgba(255, 255, 255, 0) url('https://growwithnoot.com/wp-content/uploads/2021/10/spritesheet-icons._TTH_.svg') no-repeat;
+  background-position: -1px -380px;
+  height: 48px;
+  left: 1;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  z-index: 1;
+} */
+
+.success-stories-carousel .carousel-cell .carousel-image {
+  width: 50%;
+  border-radius: 8px;
+  height: 100%;
+  /* transition: transform 0.6s; */
+}
+
+.success-stories-carousel .carousel-cell .carousel-image.video {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.success-stories-carousel .carousel-cell .carousel-image.video::before {
+  content:"";
+  background: rgba(255, 255, 255, 0) url('https://growwithnoot.com/wp-content/uploads/2021/10/spritesheet-icons._TTH_.svg') no-repeat;
+  background-position: -1px -286px;
+  background-size: initial;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+}
+
+.success-stories-carousel .carousel-cell .carousel-image img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.success-stories-carousel .carousel-cell.cell-1 .carousel-image {
+  /* background-image: url('https://staging.daniellachace.com/wp-content/uploads/2022/05/Pegan-Diet-Book.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%; */
+}
+
+.success-stories-carousel .carousel-cell.cell-2 .carousel-image {
+  /* background-image: url('https://staging.daniellachace.com/wp-content/uploads/2022/05/Carousel3-FoodCookbook.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%; */
+}
+
+.success-stories-carousel .carousel-cell.cell-3 .carousel-image {
+  /* background-image: url('https://staging.daniellachace.com/wp-content/uploads/2022/05/Carousel1-Foodfix.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%; */
+}
+
+.success-stories-carousel .carousel-cell.cell-4 .carousel-image {
+  /* background-image: url('https://staging.daniellachace.com/wp-content/uploads/2022/05/MarksPicks.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%; */
+}
+
+.success-stories-carousel .carousel-cell.cell-5 .carousel-image {
+  background-image: url('https://m.media-amazon.com/images/G/28/AS/AGS/sg/f5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.success-stories-carousel .carousel-cell.cell-6 .carousel-image {
+  background-image: url('https://m.media-amazon.com/images/G/28/AS/AGS/sg/f6.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+}
+
+#select-carousel {
+    padding: 10px;
+    border: 1px solid;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 999px) {
+  .success-stories-carousel .carousel-cell .carousel-quote .quote-content {
+    line-height: 32px;
+    max-width: 100%;
+    /* margin-bottom: 20px;
+    padding-top: 60px; */
+  }
+  .success-stories-carousel .carousel-cell .carousel-quote {
+    margin: 0px;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .success-stories-carousel .carousel-cell .carousel-quote .quote-content {
+    font-size: 1.1rem;
+  }
+  .success-stories-carousel .carousel-cell .carousel-quote .quote-attribution cite .quotee {
+    font-size: 17px;
+  }
+  .success-stories-carousel-headings .carousel-heading-text {
+    text-align: center;
+  }
+  .success-stories-carousel-headings .carousel-heading-text h2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .success-stories-carousel-headings {
+    text-align: center;
+  }
+  .success-stories-carousel .carousel-cell {
+    display: block;
+    height: auto;
+  }
+  .success-stories-carousel .carousel-cell .carousel-quote {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .success-stories-carousel .carousel-cell .carousel-quote .quote-title {
+    font-size: 2.0em;
+    max-width: 100%;
+  }
+  .success-stories-carousel .carousel-cell .carousel-image {
+    /* height: 235px; */
+    width: 100%;
+    padding: 0 50px;
+  }
+  .success-stories-carousel .carousel-cell .carousel-image img {
+    height: auto;
+    width: 100%;
+  }
+  .success-stories-carousel .carousel-cell .carousel-quote .quote-content {
+    font-size: 1.4rem;
+    /* padding-right: 3px; */
+  }
+  .success-stories-carousel .carousel-cell .carousel-quote .quote-attribution cite .quotee {
+    font-size: 17px;
+  }
+  .success-stories-carousel .carousel-cell .carousel-quote .quote-attribution cite .quotee-company {
+    font-size: 14px;
+  }
+  .success-stories-carousel {
+    padding: 0px;
+    border: none;
+    margin-top: 50px;
+  }
+  .success-stories-carousel-headings .carousel-heading-text {
+    height: calc(100% + 130px);
+  }
+}
